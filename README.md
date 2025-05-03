@@ -71,7 +71,7 @@ This includes:
 
 ## 🛠 Post-Deployment Checklist
 
-Refer to: [Post Deployment Checklist](./Halistawi_Post_Deployment_Checklist.md)
+Refer to: [Post Deployment Checklist](./post_deployment_checklist.md)
 
 Includes:
 - SSL & Domain verification
