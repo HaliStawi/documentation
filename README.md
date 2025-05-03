@@ -4,9 +4,9 @@ Welcome to the official documentation for the HaliStawi platform. This repositor
 
 ## 📄 Contents
 
-- [Deployment Guide](deployment.md)
 - [Class Diagrams](classdiagrams.md)
 - [Data Flow Diagrams](dataflowdiagrams.md)
+- [Deployment Guide](deployment.md)
 
 ## 🛠 Tech Stack Overview
 
