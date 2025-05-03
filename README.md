@@ -1,114 +1,83 @@
+
 # Halistawi Application
 
-Halistawi is a multi-platform application built to serve users across web and mobile platforms, including Android and iOS. The application is powered by a Laravel backend and Vue.js frontend, with native mobile applications developed in Java (Android) and Swift (iOS).
+Halistawi is a comprehensive health application that integrates multiple platforms to deliver a seamless healthcare management experience. It supports web (Vue.js + Laravel), Android (Java), and iOS platforms, hosted on DigitalOcean.
 
 ---
 
 ## 📦 Project Structure
 
-| Component     | Tech Stack          | Repository Link |
-|---------------|---------------------|------------------|
-| Backend API   | Laravel (PHP)       | [halistawi-backend](https://github.com/HaliStawi/halistawi-backend) |
-| Web Frontend  | Vue.js              | [halistawi-frontend](https://github.com/HaliStawi/halistawi-frontend) |
-| Android App   | Java (Android SDK)  | [halistawi-android](https://github.com/HaliStawi/halistawi-android) |
-| iOS App       | Swift (Xcode)       | [halistawi-ios](https://github.com/HaliStawi/halistawi-ios) |
-| Documentation | Markdown            | [documentation](https://github.com/HaliStawi/documentation) |
+- **Web Frontend**: Vue.js
+- **Backend API**: Laravel (PHP)
+- **Android App**: Java
+- **iOS App**: Native (Swift)
+- **Hosting**: DigitalOcean (Droplets, Managed Databases, etc.)
+- **Database**: MySQL
 
 ---
 
-## 🚀 Deployment
+## 🚀 Deployment Documentation
 
-Deployment instructions for all components (Vue.js, Laravel, Android, iOS) are available in the [Deployment Guide](https://github.com/HaliStawi/documentation/blob/main/deployment.md).
+Detailed deployment instructions for all platforms are available here:
 
-Please refer to this document for step-by-step instructions on:
-
-- Setting up servers (DigitalOcean)
-- Configuring environment files (`.env`)
-- Running migrations and seeders
-- Building and serving frontend
-- Building Android and iOS apps
-
----
-
-## 🧰 Prerequisites
-
-### Backend (Laravel)
-- PHP ≥ 8.1
-- Composer
-- MySQL / MariaDB
-- Laravel CLI
-
-### Frontend (Vue.js)
-- Node.js ≥ 16
-- npm / yarn
-- Vue CLI
-
-### Android
-- Android Studio
-- Java SDK
-- Android SDK / Emulator or Device
-
-### iOS
-- macOS with Xcode
-- Apple Developer Account
-- iPhone or Simulator
-
----
-
-## ⚙️ Setup Instructions
-
-### Backend (Laravel)
-```bash
-git clone https://github.com/HaliStawi/halistawi-backend.git
-cd halistawi-backend
-cp .env.example .env
-composer install
-php artisan key:generate
-php artisan migrate --seed
-php artisan serve
-```
-
-### Frontend (Vue.js)
-```bash
-git clone https://github.com/HaliStawi/halistawi-frontend.git
-cd halistawi-frontend
-cp .env.example .env
-npm install
-npm run dev
-```
-
-### Android
-Open the project in Android Studio and sync Gradle files. Then build and run the app on a device or emulator.
-
-### iOS
-Open the project in Xcode, configure signing, and run it on a simulator or physical device.
-
----
-
-## 🛠 Environment Configuration
-
-Each project contains a `.env.example` file. Copy it to `.env` and configure:
-
-- API endpoints
-- Database credentials
-- Mail and storage settings
-- Firebase or notification services (if any)
-
----
-
-## 📄 Documentation
-
-Detailed documentation and deployment instructions are available here:  
-📘 **[Halistawi Deployment Documentation](https://github.com/HaliStawi/documentation/blob/main/deployment.md)**
+📄 [Deployment Guide](https://github.com/HaliStawi/documentation/blob/main/deployment.md)
 
 This includes:
-- Server setup (Ubuntu, Nginx)
-- SSL with Let's Encrypt
-- Laravel queue and scheduler configuration
-- Frontend build and Nginx setup
-- Mobile build and release process
+- Environment setup
+- Web, API, Android, and iOS deployment
+- Cron jobs and queues
+- SSL configuration
+- Domain setup
 
 ---
+
+## 📂 Repositories
+
+| Platform     | Repository URL |
+|--------------|----------------|
+| Web Frontend | [Vue.js Repo](https://github.com/HaliStawi/frontend) |
+| Backend API  | [Laravel Repo](https://github.com/HaliStawi/backend) |
+| Android App  | [Android Repo](https://github.com/HaliStawi/android) |
+| iOS App      | [iOS Repo](https://github.com/HaliStawi/ios) |
+| Documentation | [Docs Repo](https://github.com/HaliStawi/documentation) |
+
+---
+
+## ⚙️ Technologies Used
+
+- **Frontend**: Vue.js 3, Vuex, Axios
+- **Backend**: Laravel 10, Sanctum for auth, MySQL
+- **Mobile**: Java (Android), Swift (iOS)
+- **DevOps**: Nginx, PHP-FPM, Supervisor, GitHub Actions (CI/CD)
+- **Others**: Docker (optional), Redis (for queues), S3 (for storage)
+
+---
+
+## 🔐 Security & Roles
+
+- JWT & token-based authentication
+- Role-based access (Admin, Super Admin, User, etc.)
+- OTP verification
+
+---
+
+## 🧪 Testing
+
+- Postman collection available for backend API
+- Unit and Feature tests in Laravel using PHPUnit
+- Manual and device testing for Android & iOS
+
+---
+
+## 🛠 Post-Deployment Checklist
+
+Refer to: [Post Deployment Checklist](./Halistawi_Post_Deployment_Checklist.md)
+
+Includes:
+- SSL & Domain verification
+- Background workers validation
+- Queue/cron setup
+- Error monitoring
 
 ## 👥 Contributors
 
@@ -119,3 +88,11 @@ This includes:
 ## 📫 Contact
 
 For issues, reach out via GitHub Issues or contact [support@halistawi.com].
+
+## 📜 License
+
+MIT License. See `LICENSE` file for details.
+
+---
+
+© 2025 Halistawi Health Systems. All rights reserved.
