@@ -1,7 +1,7 @@
 
 # Halistawi Application
 
-Halistawi is a comprehensive health application that integrates multiple platforms to deliver a seamless healthcare management experience. It supports web (Vue.js + Laravel), Android (Java), and iOS platforms, hosted on DigitalOcean.
+Halistawi is a comprehensive health application that integrates multiple platforms to deliver a seamless health management experience. It supports web (Vue.js + Laravel), Android (Java), and iOS platforms, hosted on DigitalOcean.
 
 ---
 
